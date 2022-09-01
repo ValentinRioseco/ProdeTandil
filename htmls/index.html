@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Primera página web</title>
-    <link rel="stylesheet" href="/css/Login.css">
-</head>
-<body>
-    <img class="loginlogo" src="../Images\football.jpg">
-    <h1 class="title">Prode Tandil</h1>
-    <h3 class="subtitle">Hola wachos</h3>
-    <section class="text">
-        <button>Login</button>
-        <button>Registrate</button>
-     </section> 
+    <link rel="stylesheet" href="/css/Login.css" />
+  </head>
+  <body>
+    <img class="loginlogo" src="../Images\football.jpg" />
+    <h1>PEPITO</h1>
+    <h2>Prode Qatar 2022</h2>
 
-</body>
+    <div class="boton">
+      <button id="boton" oneclick="ingresar" ();>Ingresar</button>
+      <button id="boton">Registrarse</button>
+    </div>
+
+    <div id="Login">
+      <form id="form">
+        <input type="text" placeholder="Email o Usuario" />
+        <input type="password" placeholder="contraseña" />
+        <input type="submit" value="Entrar" />
+      </form>
+      <p>todabía no tienes una cuenta? <a href="">registrarme</a></p>
+    </div>
+
+    <div class="formulario">
+      <form>
+        <input type="email" placeholder="Email" name="Email" />
+        <input type="text" placeholder="Nombre y apellido" name="nombre" />
+        <input type="password" placeholder="Contraseña" name="contraseña" />
+        <input
+          type="password"
+          placeholder="Confirmar contraseña"
+          name="contraseña"
+        />
+        <button type="submit" value="Registrarme"></button>ff
+      </form>
+      <a href="">Ya tengo cuenta</a>
+    </div>
+
+    <script type="text/javascript">
+      Function ingresar() {
+       document.getElementById('login').style.display = 'block';
+      }
+    </script>
+  </body>
 </html>
