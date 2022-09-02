@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../images\sapito.jpg"
         <title> Perfil PRODE 2022</title>
-        <link rel="stylesheet" href="../css/Pinture.css"/>
+        <link rel="stylesheet" href="../css/Login.css"/>
 
         </head>
         <body> 
@@ -49,23 +49,44 @@
                     <article class ="article"></article> <p>
                 -Rojas: 10 Puntos
            </section>
-
-            <p>Info:</p>
-            <p>-Nombre:</p></Input><label for="Nombre"></label><Input>
-            <p>-Edad:</p> </Input><label for="Edad"></label><Input>
-            <p>-Nacionalidad</p></Input><label for="Nombre"></label><Input><Br>
         
+      
+            <p>Info:</p>
+            <input type="text" id="-Nombre" name="-Nombre" placeholder="-Nombre" disabled=»disabled» />
+            <input type="text" id="-Edad" name="-Edad" placeholder="-Edad" disabled=»disabled» />
+            <input type="text" id="-Nacionalidad" name="-Nacionalidad" placeholder="-Nacionalidad" disabled=»disabled» />
             
-               
+            <button id="GuardarCambios" onclick="desactivarcaja()">Guardar</button>
             
 
-                <Br><button>Cambiar Datos Personales💻</button><Br>
+          
+  
+               
+ 
+
+                <Br><input type="button" name="" value="Modificar Perfil 💻" onclick="activarcaja()" /><Br>
                 <button>Mis ligas🏆</button><Br>
                 <button>Cerrar Sesion❌</button> <Br>
                 <button>Eliminar Cuenta 👋</button><Br>
 
 
             </p>
+
+            <script type="text/javascript" >
+                function activarcaja() {
+                      document.getElementById('-Nombre').disabled=false
+                      document.getElementById('-Edad').disabled=false
+                      document.getElementById('-Nacionalidad').disabled=false
+                      document.getElementById('GuardarCambios').style.visibility = 'visible';
+                    }
+                function desactivarcaja() {
+                    document.getElementById('-Nombre').disabled=true
+                      document.getElementById('-Edad').disabled=true
+                      document.getElementById('-Nacionalidad').disabled=true
+                      document.getElementById('GuardarCambios').style.visibility = 'hidden';
+                }
+                
+        </script>
         </section>
         </body>
 
