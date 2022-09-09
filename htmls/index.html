@@ -1,70 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<<<<<<< Updated upstream
-<head> 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primera página web</title>
-    <link rel="stylesheet" href="/css/Login.css">
-</head>
-<body>
-    <img class="loginlogo" src="../Images\football.jpg">
-    <h1 class="title">Prode Tandil</h1>
-    <h3 class="subtitle">Hola wachos</h3>
-    <section class="text">
-        <button>Ingresar</button>
-        <button>Registrate</button>
-     </section> 
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>prode tandil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="contenedor__todo">
+        <div class="caja__trasera">
+          <div class="caja__trasera-login">
+            <h3>¿Ya tienes una cuenta?</h3>
+            <p>Inicia sesión para entrar en la página</p>
+            <button type="submit" id="btn__iniciar-sesion">Iniciar Sesión</button>
+          </div>
 
-</body>
-=======
+          <div class="caja__trasera-register">
+            <h3>¿Aun no tienes una cuenta?</h3>
+            <p>Regístrate para poder iniciar sesión</p>
+            <button type="submit" id="btn__register">Registrarse</button>
+          </div>
+        </div>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Primera página web</title>
-  <link rel="stylesheet" href="../css/Login.css" />
-</head>
+        <div class="contenedor__login-register">
+          <form action="" class="formulario__login">
+            <h2>Iniciar Sesión</h2>
+            <input type="email" placeholder="Correo electronico" />
+            <input type="password" placeholder="Contraseña" />
+            <button type="submit">Entrar</button>
+          </form>
 
-<body>
-  <img class="loginlogo" src="../Images\football.jpg" />
-  <h1>PEPITO</h1>
-  <h2>Prode Qatar 2022</h2>
-
-  <div id="BotonesLogin">
-    <button type="button" onclick="MostrarLogin()">Ingresar</button>
-    <button type="button" onclick="MostrarRegister()">Registrarse</button>
-  </div>
-
-  <div link="login" id="Login">
-    <form id="form">
-      <input type="text" placeholder="Email o Usuario" />
-      <input type="password" placeholder="contraseña" />
-      <input type="submit" value="Entrar" />
-    </form>
-    <p>todabía no tienes una cuenta? <a href="">registrarme</a></p>
-  </div>
-
-
-  <div id="Register">
-    <form>
-      <input type="email" placeholder="Email" name="Email" />
-      <input type="text" placeholder="Nombre y apellido" name="nombre" />
-      <input type="password" placeholder="Contraseña" name="contraseña" />
-      <input type="password" placeholder="Confirmar contraseña" name="contraseña" />
-      <button type="button" value="Registrarme"></button>
-      
-    <button type="button" onclick="YaTengoCuenta">Ya tengo cuenta </button>
-    </form>
-    <script src="../js/Index.js">
-
-    </script>
-    
-  </div>
-
-</body>
-
->>>>>>> Stashed changes
+          <form action="" class="formulario__register">
+            <h2>Registrarse</h2>
+            <input type="text" placeholder="Nombre y Apellido" />
+            <input type="password" placeholder="Contraseña" />
+            <input type="email" placeholder="Correo Electronico" />
+            <input type="text" placeholder="usuario" />
+            <button type="submit">Registrarse</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  <script src="..//index.js"></script>
+  </body>
 </html>
