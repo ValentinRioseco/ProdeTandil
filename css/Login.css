@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url(fondo.jpg);
+    background-image: url(/Images/fondo.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -17,8 +17,21 @@ main{
     width: 100%;
     padding: 20px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 10px;
 }
+
+.LogoLogin{
+    text-align: center;
+
+}
+
+.imagenn {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+
 
 .contenedor__todo{
     width: 100%;
@@ -34,6 +47,7 @@ main{
     justify-content: center;
     backdrop-filter: blur (10px);
     background-color: rgb(36, 207, 122);
+    border-radius: 30px;
 }
 
 .caja__trasera div{
@@ -77,7 +91,7 @@ main{
     max-width: 380px;
     position: relative;
     top: -185px;
-    left: 10px;
+    left: 0px;
     transition: left 500ms cubic-bezier(0.175, 0.88, 0.320, 1.275);
 }
 
@@ -92,7 +106,7 @@ main{
 }
 
 .contenedor__login-register form h2{
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     margin-bottom: 20px;
     color: #46A2FD;
