@@ -1,93 +1,69 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="../images\sapito.jpg"
-        <title> Perfil PRODE 2022</title>
-        <link rel="stylesheet" href="../css/Login.css"/>
 
-        </head>
-        <body> 
-            
-            <div id="container">
-            <p>Foto de perfil:</p>
-            <img src="../images/leo.jpg">                     
-            <button type="button" id="botonOn" onclick="FbotonOn()"> Cambiar foto de perfil 🧑 </button>
+<head>
 
-        </body>
-        </html>
-        
-        <script>
-        var valor = true
-        function FbotonOn() {
-          var uno = document.getElementById('botonOn');
-          valor?uno.innerText = "Guardar":uno.innerText = "Cambiar foto de perfil 🧑";
-          valor=!valor
-        }
-        
-        </script>
-            <p>
-                <h3>Puntaje:(86)</h3>
-            </p>
-           <section id="content">
-            <article class ="article"></article> <p>
-                El puntaje es la suma de los resultados y predicciones acertadas:
-                <section id="content">
-                    <article class ="article"></article> <p>
-                -Partidos Acertados: 10 Puntos
-                <section id="content">
-                    <article class ="article"></article> <p>
-                -Goleadores Acertados: 15 Puntos
-                <section id="content">
-                    <article class ="article"></article> <p>
-                -Asistidores Acertados: 20 Puntos
-                <section id="content">
-                    <article class ="article"></article> <p>
-                -Amarillas:5 Puntos
-                <section id="content">
-                    <article class ="article"></article> <p>
-                -Rojas: 10 Puntos
-           </section>
-        
-      
-            <p>Info:</p>
-            <input type="text" id="-Nombre" name="-Nombre" placeholder="-Nombre" disabled=»disabled» />
-            <input type="text" id="-Edad" name="-Edad" placeholder="-Edad" disabled=»disabled» />
-            <input type="text" id="-Nacionalidad" name="-Nacionalidad" placeholder="-Nacionalidad" disabled=»disabled» />
-            
-            <button id="GuardarCambios" onclick="desactivarcaja()">Guardar</button>
-            
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images\sapito.jpg">
+    <link rel="stylesheet" href="../css/Login.css">
 
-          
-  
+
+</head>
+
+<body>
+
+    <div id="container">
+        <h3>Foto de perfil:</h3>
+        <img src="../images/leo.jpg" class="loginlogo">
+        <button type="button" id="botonOn" onclick="FbotonOn()"> Cambiar foto de perfil 🧑 </button>
+    </div>
+    <div><h2 class="h2">Perfil</h2>
+        <div><h2 class="h2">Puntos (86)</h2>  
+    </div>
+
+
+    <div><h3 class="h3">El puntaje es la suma de los resultados y predicciones acertadas:</h3>
+
+        <h3 class="h3"> -Partidos Acertados: 10 Puntos </h3>
                
- 
+        <h3 class="h3"> -Goleadores Acertados: 15 Puntos </h3>
 
-                <Br><input type="button" name="" value="Modificar Perfil 💻" onclick="activarcaja()" /><Br>
-                <button>Mis ligas🏆</button><Br>
-                <button>Cerrar Sesion❌</button> <Br>
-                <button>Eliminar Cuenta 👋</button><Br>
+        <h3 class="h3"> -Asistidores Acertados: 20 Puntos </h3>
+
+        <h3 class="h3"> -Amarillas:5 Puntos </h3>
+
+        <h3 class="h3"> -Rojas: 10 Puntos </h3>
 
 
-            </p>
 
-            <script type="text/javascript" >
-                function activarcaja() {
-                      document.getElementById('-Nombre').disabled=false
-                      document.getElementById('-Edad').disabled=false
-                      document.getElementById('-Nacionalidad').disabled=false
-                      document.getElementById('GuardarCambios').style.visibility = 'visible';
-                    }
-                function desactivarcaja() {
-                    document.getElementById('-Nombre').disabled=true
-                      document.getElementById('-Edad').disabled=true
-                      document.getElementById('-Nacionalidad').disabled=true
-                      document.getElementById('GuardarCambios').style.visibility = 'hidden';
-                }
-                
-        </script>
-        </section>
-        </body>
+
+                            <p>Info:</p>
+                            <input type="text" id="-Nombre" name="-Nombre" placeholder="-Nombre" disabled=»disabled» />
+                            <input type="text" id="-Edad" name="-Edad" placeholder="-Edad" disabled=»disabled» />
+                            <input type="text" id="-Nacionalidad" name="-Nacionalidad" placeholder="-Nacionalidad"
+                                disabled=»disabled» />
+
+                            <button id="GuardarCambios" onclick="desactivarcaja()">Guardar</button>
+
+
+
+
+
+
+
+                            <Br><input type="button" name="" value="Modificar Perfil 💻" onclick="activarcaja()" /><Br>
+                            <button>Mis ligas🏆</button><Br>
+                            <button>Cerrar Sesion❌</button> <Br>
+                            <button>Eliminar Cuenta 👋</button><Br>
+
+
+                            </p>
+
+
+                        </section>
+                        <script src="/js/perfil.js"></script>
+</body>
+
 
 </html>
